@@ -132,6 +132,6 @@ class IconManager:
 
 		# load from local path
 		else:
-			base_path = os.path.dirname(get_base_directory())
+			base_path = os.path.join(sys.prefix, 'share', 'sunflower')
 			window.set_icon_from_file(os.path.join(base_path, 'images', 'sunflower.svg'))
 
